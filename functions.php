@@ -12,6 +12,9 @@ function view($path, $vars = null){
 /**
  * affiche un message stocké dans la session pour une future requete
  */
-function flash() {
-
+function flash(){
+    if(isset($_SESSION["id"])){
+        $producte = "BINGO";
+    }
+    return $producte;
 }

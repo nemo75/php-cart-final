@@ -17,7 +17,7 @@ $app['debug'] = true;
  */
 $app->get('/', 'App\\Controllers\\HomeController::getIndex'); 
 $app->get('/logout', 'App\\Controllers\\HomeController::getLogout'); 
-$app->get('/cart', 'App\\Controllers\\CartController::getIndex'); 
+$app->get('/cart/', 'App\\Controllers\\CartController::getIndex'); 
 $app->post('/cart/add', 'App\\Controllers\\CartController::postAdd'); 
 
 

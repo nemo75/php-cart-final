@@ -17,7 +17,7 @@
     <div class="ui menu">
         <div class="item header">Ma super boutique</div>
         <a class="active item" href="/">Produits</a>
-        <a class="item" href="/cart">Mon panier (<?=Cart::count()?> - <?=Cart::total()?> &euro;)</a>
+        <a class="item" href="/cart">Mon panier <?=Cart::count()?> - <?=Cart::total()?> &euro;)</a>
         <div class="right menu">
             <div class="item">
                 <a href="/logout" class="ui primary button">Logout</a>

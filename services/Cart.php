@@ -5,10 +5,12 @@ class Cart {
 		return [];
 	}
 	public static function add($product) {
-	}
 
+	}
 	public function count(){
+		
 	}
 	public function total(){
+
 	}
 }

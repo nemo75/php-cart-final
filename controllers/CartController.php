@@ -8,9 +8,12 @@ use Cart;
 class CartController extends Controller {
 
 	public function getIndex(Request $request, Application $app){
+		return view('cart/index', ['products' => Product::all()]);
 	}	
 
 	public function postAdd(Request $request, Application $app){
+    	$product = Product::find($_POST['id']);
+    	
+    	return $app->redirect('/');
 	}	
-
 }
