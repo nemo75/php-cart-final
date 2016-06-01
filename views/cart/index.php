@@ -8,14 +8,14 @@
 				<div class="item">
 					<a href="/cart/checkout" class="ui button">Finaliser ma commande</a>
 				</div>
-				<h4 class="item header">Montant total :  &euro;</h4>
-				<h4 classs="item header">Nombre produits : ???</h4>
+				<h4 class="item header">Montant total :  <?=Cart::total()?>&euro;</h4>
+				<h4 classs="item header">Nombre produits : <?=Cart::count()?></h4>
 			</div>
 		</div>
 		<div class="column">
+		<h1 class="ui container">R&eacute;cpitulatif de votre commande</h1>
 			<table class="ui table compact">
-				<!-- une boucle ! -->	
-				<?php echo $order->price; ?>			
+				<?php echo $_SESSION['order']->price ?>
 			</table>
 		</div>
 	</div>

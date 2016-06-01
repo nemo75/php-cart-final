@@ -8,7 +8,6 @@ use Cart;
 class CartController extends Controller {
 
 	public function getIndex(Request $request, Application $app){
-		$cart = Cart::get();
 		return view('cart/index', ['products' => $cart, 'amount'=>Cart::total()]);
 	}	
 

@@ -2,6 +2,9 @@
 
 class Cart {
 	public static function get() {
+		if(isset($_SESSION['order'])){
+			return $_SESSION['order'];
+		}
 		return [];
 	}
 	public static function add($product) {
@@ -21,7 +24,7 @@ class Cart {
 		$products = json_decode($_SESSION['order']);
 		$count = 0;
 		foreach($products as $product) {
-			$count += $product->price;
+			$count = $count + $product->price;
 		}
 		$count = $count;
 		return  $count;
