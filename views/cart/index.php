@@ -15,7 +15,7 @@
 		<div class="column">
 		<h1 class="ui container">R&eacute;cpitulatif de votre commande</h1>
 			<table class="ui table compact">
-				<?php echo $_SESSION['order']->price ?>
+				<?php echo $_SESSION['order'] ?>
 			</table>
 		</div>
 	</div>
